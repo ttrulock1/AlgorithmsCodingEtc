@@ -22,3 +22,18 @@ var twoSum = function(nums, target){
         }
     }
 }
+
+// Here is a secondary Solution
+
+var twoSum = function(nums, target){
+    for(let i = 0; i < nums.length; i++){
+        nums.set(nums[i],i)
+    };
+}
+
+    for(let i = 0; i < nums.length; i++ ){
+        const secIndex = map.get(target - nums [i]);
+        if(secIndex && secIndex != i){
+            return [i, secIndex]
+        }
+    }
