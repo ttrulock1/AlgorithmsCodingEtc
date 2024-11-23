@@ -20,3 +20,6 @@ var longCommonPrefix = function (strs){
         return pref = pref.substring(0,prefLen)
     }
 }
+
+// rewrite this with the starsWith
+// rewrite with the slice
