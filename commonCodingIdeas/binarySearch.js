@@ -34,3 +34,25 @@ function binarySearchRecursive(arr, target, low = 0, high = arr.length){
     return binarySearchRecursive(arr, target, low, mid - 1);
   }
 }
+
+
+
+//sort arranges the array in order.
+
+binarySearchRecursive (arr, target){
+  arr.sort((a,b) => a-b)
+  let low = 0;
+  let high = arr.length;
+  let mid = Math.floor((high + low) / 2);
+ 
+  const Search = function (low, high){
+
+  if(target===arr[mid]) {
+    return mid
+  } else if (target > arr[mid]){
+    return search(mid + 1 ,high)
+  } else{ 
+    return search(low, arr[mid-1])
+  }
+}
+}
